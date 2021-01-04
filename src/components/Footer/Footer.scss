@@ -1,0 +1,58 @@
+@import "src/styles/colors";
+@import "src/styles/breakpoints";
+
+  .contact-section {
+    padding: 2rem 1.5rem;
+    //background-color: #303841;
+    background-color: $primary;
+    box-shadow: 0 -1px 5px 1px rgba(255, 255, 255, 0.2);
+
+    h2 {
+      padding: 0;
+      font-size: 3.6rem;
+      text-align: center;
+    }
+  }
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+
+    @include for-mobile-small {
+      flex-direction: column;
+      a {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+    font-size: 1.4rem;
+  }
+
+  .contact-details svg {
+    margin-right: 10px;
+  }
+
+  .contact-details:hover {
+    transform: translateY(8px);
+    color: #fff;
+  }
+
+  .contact-details:hover path {
+    fill: #777;
+  }

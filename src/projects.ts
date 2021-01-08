@@ -11,6 +11,14 @@ export type Projects = Project[];
 
 export const data: Projects = [
   {
+    id: 10,
+    title: "Covid-19 tracker",
+    description: "Tracker for covid-19",
+    href: "https://nakryt.github.io/covid-19-tracker/",
+    image: "covid-19-tracker",
+    alt: "Covid-19 tracker",
+  },
+  {
     id: 9,
     title: "Facebook Clone",
     description: "Demo facebook-clone with React and firebase",
